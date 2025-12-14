@@ -10,6 +10,8 @@ from nextcord.ext import commands
 
 intents = nextcord.Intents.default()
 intents.message_content = True
+intents.members = True
+intents.presences = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 def generate_random_name(length=16):
